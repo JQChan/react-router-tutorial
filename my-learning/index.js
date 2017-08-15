@@ -6,10 +6,10 @@ import Repos from './modules/Repos';
 import Repo from './modules/Repo';
 import Home from './modules/Home';
 
-import { Router, Route, hashHistory, IndexRoute  } from 'react-router';
+import { Router, Route, hashHistory, IndexRoute, browserHistory  } from 'react-router';
 
 render(
-  (<Router history={hashHistory}>
+  (<Router history={browserHistory}>
        <Route path="/" component={App}>
           <IndexRoute component={Home} />
           <Route path="/about" component={About} />
